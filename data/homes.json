@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Lakeside Villa",
+    "type": "single-family",
+    "price": 650000,
+    "sq_ft": 3200,
+    "bedrooms": 4,
+    "bathrooms": 3.5,
+    "amenities": ["pool", "park", "lake", "garage"],
+    "location": "Waterfront District",
+    "description": "Stunning single-family home with lake views, private pool, and spacious backyard. Perfect for families who love outdoor activities. Features a modern kitchen, home office, and large master suite."
+  },
+  {
+    "id": 2,
+    "name": "Urban Loft Condo",
+    "type": "condo",
+    "price": 320000,
+    "sq_ft": 1400,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "amenities": ["gym", "parking", "concierge"],
+    "location": "Downtown Core",
+    "description": "Modern condo in the heart of the community with high ceilings and city views. Building features gym, rooftop terrace, and 24/7 concierge. Walking distance to shops and restaurants."
+  },
+  {
+    "id": 3,
+    "name": "Family Haven",
+    "type": "single-family",
+    "price": 485000,
+    "sq_ft": 2800,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "amenities": ["park", "playground", "garage", "trails"],
+    "location": "Greenwood Estates",
+    "description": "Spacious family home near excellent schools and parks. Large backyard with playground equipment. Open floor plan with updated kitchen and master bedroom with walk-in closet."
+  },
+  {
+    "id": 4,
+    "name": "Executive Townhouse",
+    "type": "townhouse",
+    "price": 425000,
+    "sq_ft": 2200,
+    "bedrooms": 3,
+    "bathrooms": 2.5,
+    "amenities": ["pool", "gym", "garage", "clubhouse"],
+    "location": "Village Square",
+    "description": "Elegant townhouse with community pool and fitness center. Low-maintenance living with modern finishes. Perfect for professionals seeking luxury amenities and community atmosphere."
+  },
+  {
+    "id": 5,
+    "name": "Sunset Retreat",
+    "type": "single-family",
+    "price": 720000,
+    "sq_ft": 3500,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "amenities": ["pool", "spa", "outdoor kitchen", "garage", "lake"],
+    "location": "Sunset Ridge",
+    "description": "Luxurious home with resort-style backyard featuring pool, spa, and outdoor kitchen. Gourmet kitchen, home theater, and expansive master suite. Perfect for entertaining with lake access."
+  },
+  {
+    "id": 6,
+    "name": "Starter Home Plus",
+    "type": "single-family",
+    "price": 285000,
+    "sq_ft": 1600,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "amenities": ["park", "garage", "trails"],
+    "location": "Maple Grove",
+    "description": "Perfect starter home with affordable price and great potential. Recently updated kitchen and bathrooms. Quiet neighborhood near parks and walking trails. Great investment opportunity."
+  },
+  {
+    "id": 7,
+    "name": "Golf Course Estate",
+    "type": "single-family",
+    "price": 895000,
+    "sq_ft": 4200,
+    "bedrooms": 5,
+    "bathrooms": 4.5,
+    "amenities": ["golf", "pool", "clubhouse", "garage", "gym"],
+    "location": "Championship Links",
+    "description": "Premier estate home on golf course with panoramic views. Custom chef's kitchen, wine cellar, home gym, and office. Private pool and cabana. Exclusive community with world-class amenities."
+  },
+  {
+    "id": 8,
+    "name": "Modern Minimalist Condo",
+    "type": "condo",
+    "price": 275000,
+    "sq_ft": 1100,
+    "bedrooms": 2,
+    "bathrooms": 1.5,
+    "amenities": ["parking", "gym", "pool"],
+    "location": "Arts District",
+    "description": "Sleek contemporary condo with minimalist design and smart home features. Building amenities include rooftop pool and fitness center. Low HOA fees and great location near cultural attractions."
+  },
+  {
+    "id": 9,
+    "name": "Craftsman Charmer",
+    "type": "single-family",
+    "price": 525000,
+    "sq_ft": 2600,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "amenities": ["park", "garage", "trails", "playground"],
+    "location": "Heritage Hills",
+    "description": "Beautiful craftsman-style home with character and charm. Original hardwood floors, built-in shelving, and covered front porch. Large backyard with mature trees. Walking distance to top-rated schools."
+  },
+  {
+    "id": 10,
+    "name": "Luxury Penthouse",
+    "type": "condo",
+    "price": 780000,
+    "sq_ft": 2400,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "amenities": ["gym", "pool", "spa", "concierge", "parking", "rooftop"],
+    "location": "Skyline Towers",
+    "description": "Exclusive penthouse with breathtaking city and lake views. Floor-to-ceiling windows, gourmet kitchen, and private terrace. Building features full-service concierge, spa, and rooftop lounge."
+  }
+]
