@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import PreferenceForm from '@/components/PreferenceForm';
-import ResultsGrid from '@/components/ResultsGrid';
-import { MatchedHome, FormData } from '@/types';
+import { useState } from "react";
+import PreferenceForm from "@/components/PreferenceForm";
+import ResultsGrid from "@/components/ResultsGrid";
+import { MatchedHome, FormData } from "@/types";
 
 export default function Home() {
   const [matches, setMatches] = useState<MatchedHome[]>([]);
@@ -18,10 +18,10 @@ export default function Home() {
 
     try {
       // Call the Next.js API route which proxies to FastAPI
-      const response = await fetch('/api/match', {
-        method: 'POST',
+      const response = await fetch("/api/match", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           homeType: formData.homeType,
@@ -32,14 +32,14 @@ export default function Home() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to fetch matches');
+        throw new Error("Failed to fetch matches");
       }
 
       const data = await response.json();
       setMatches(data.matches || []);
     } catch (err) {
-      setError('Unable to find matches. Please try again.');
-      console.error('Error fetching matches:', err);
+      setError("Unable to find matches. Please try again.");
+      console.error("Error fetching matches:", err);
     } finally {
       setLoading(false);
     }
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">
-              🏡 AI Property Matchmaker
+              🏡 HHH AI Property Matchmaker
             </h1>
             <p className="text-lg text-gray-600">
               Find Your Dream Home in Our Master-Planned Community
@@ -69,10 +69,23 @@ export default function Home() {
               Welcome to Your Future Home
             </h2>
             <p className="text-xl text-blue-100">
-              Our AI-powered matchmaker helps you discover properties that perfectly 
-              align with your lifestyle, budget, and dreams. Experience modern living 
-              in a vibrant, master-planned community designed for connection, 
-              convenience, and comfort.
+              Our AI-powered matchmaker helps you discover properties that
+              perfectly align with your lifestyle, budget, and dreams.
+              Experience modern living in a vibrant, master-planned community
+              designed for connection, convenience, and comfort.
+            </p>
+
+            <p className="mt-8 text-base text-blue-100 italic border-l-2 border-blue-300 pl-6 py-4 bg-white/10 rounded-md shadow-sm">
+              “We have decades of growth ahead, with 1.5 million square feet of
+              development runway to increase density, quality of life, and
+              livability across our portfolio. As our master planned communities
+              mature, our business will generate substantially increasing cash
+              flows over time, driving the continued transformation of America’s
+              urban landscape.”
+              <br />
+              <span className="block mt-4 font-semibold not-italic text-blue-200">
+                — David O’Reilly, Chief Executive Officer
+              </span>
             </p>
           </div>
         </div>
@@ -94,7 +107,9 @@ export default function Home() {
         {loading && (
           <div className="text-center py-12">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-            <p className="mt-4 text-gray-600">Finding your perfect matches...</p>
+            <p className="mt-4 text-gray-600">
+              Finding your perfect matches...
+            </p>
           </div>
         )}
 
@@ -107,8 +122,8 @@ export default function Home() {
         {!loading && searched && matches.length === 0 && !error && (
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center">
             <p className="text-yellow-800 text-lg">
-              No properties match your exact criteria. Try adjusting your preferences 
-              or budget to see more options.
+              No properties match your exact criteria. Try adjusting your
+              preferences or budget to see more options.
             </p>
           </div>
         )}
