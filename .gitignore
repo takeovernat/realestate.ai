@@ -44,9 +44,9 @@ venv/
 ENV/
 backend/__pycache__/
 *.pyc
-
+.vscode
 # IDE
-.vscode/
+
 .idea/
 *.swp
 *.swo
