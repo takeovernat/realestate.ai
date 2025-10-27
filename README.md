@@ -94,18 +94,22 @@ ai-property-matchmaker/
 ## 🎯 How It Works
 
 ### Frontend (Next.js)
+
 1. User fills out the preference form with budget, home type, amenities, and custom needs
 2. Form data is sent to the Next.js API route (`/api/match`)
 3. Results are displayed in an attractive card-based grid
 
 ### Backend (FastAPI)
+
 1. Receives user preferences via POST request to `/match` endpoint
 2. Uses text embedding and cosine similarity to match preferences with properties
 3. Ranks properties based on multiple factors (budget, amenities, custom needs)
 4. Returns top 3 matches with AI-generated explanations
 
 ### Mock AI Logic
+
 The backend simulates LLM integration using:
+
 - **TF-IDF Vectorization**: Converts text descriptions to numerical vectors
 - **Cosine Similarity**: Measures similarity between user needs and property features
 - **Multi-factor Scoring**: Combines budget matching, amenity overlap, and text similarity
@@ -114,12 +118,14 @@ The backend simulates LLM integration using:
 ## 🌐 Deployment
 
 ### Frontend (Vercel)
+
 ```bash
 npm run build
 # Deploy to Vercel via GitHub integration or Vercel CLI
 ```
 
 ### Backend (Options)
+
 1. **Railway/Render**: Simple Python deployment
 2. **AWS Lambda**: Serverless FastAPI with Mangum adapter
 3. **Docker**: Containerized deployment
@@ -142,6 +148,7 @@ For production, update this to your deployed backend URL.
 ## 🎨 Customization
 
 ### Adding New Properties
+
 Edit `data/homes.json` to add or modify properties:
 
 ```json
@@ -160,6 +167,7 @@ Edit `data/homes.json` to add or modify properties:
 ```
 
 ### Styling
+
 Modify Tailwind classes in components or update `tailwind.config.ts` for theme customization.
 
 ## 🧪 Testing
@@ -175,30 +183,3 @@ curl -X POST http://localhost:8000/match \
     "customNeeds": "Need a home office and large backyard"
   }'
 ```
-
-## 📝 Technical Highlights
-
-- **Next.js 14 App Router**: Modern React framework with server components
-- **TypeScript**: Type-safe frontend development
-- **Tailwind CSS**: Utility-first CSS framework
-- **FastAPI**: High-performance Python web framework
-- **Scikit-learn**: Machine learning library for text similarity
-- **Responsive Design**: Mobile-first approach with modern UI patterns
-
-## 🤝 Interview Context
-
-This project demonstrates:
-- Full-stack development (Next.js + Python)
-- RESTful API design and integration
-- AI/ML integration (text similarity algorithms)
-- Modern React patterns (hooks, TypeScript)
-- Clean code architecture and documentation
-- Production-ready deployment considerations
-
-## 📄 License
-
-MIT License - feel free to use this project for your portfolio or interviews.
-
-## 👨‍💻 Author
-
-Built as a technical demonstration for real estate AI applications.
